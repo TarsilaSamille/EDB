@@ -1,0 +1,23 @@
+\hypertarget{md_README_autotoc_md1}{}\doxysection{Compiling}\label{md_README_autotoc_md1}
+This project may be compiled with \href{https://cmake.org}{\texttt{ C\+Make}}. C\+Make is an open-\/source, cross-\/platform family of tools designed to build, test and package software. Basically, cmake reads a script ({\ttfamily C\+Make\+Lists.\+txt}) with meta-\/information on the project and {\bfseries{creates a Makefile automatically}}, tailored to your system configuration. After that, you may run the {\ttfamily make} command, as usual.
+
+To compile this project with \href{https://cmake.org}{\texttt{ cmake}} follow these steps\+:
+
+
+\begin{DoxyEnumerate}
+\item {\ttfamily cd algoritmos-\/de-\/ordenacao}\+: enters into the main project directory.
+\item {\ttfamily cmake -\/S . -\/Bbuild}\+: asks cmake to create the build directory and generate the Unix Makefile based on the script found in {\ttfamily C\+Make\+Lists.\+txt}, on the current level.
+\item {\ttfamily cd build}\+: enter the build folder.
+\item {\ttfamily cmake -\/-\/build .} or {\ttfamily make}\+: triggers the compiling process.
+\end{DoxyEnumerate}
+
+The executable {\ttfamily timing\+\_\+ordenation} are created inside the {\ttfamily build} directory.\hypertarget{md_README_autotoc_md2}{}\doxysection{Running}\label{md_README_autotoc_md2}
+From the project\textquotesingle{}s root folder, run as usual (assuming {\ttfamily \$} is the terminal prompt)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ ./build/algoritmos-\/de-\/ordenacao}
+\end{DoxyCode}
+
+
+\copyright{} 2020. 

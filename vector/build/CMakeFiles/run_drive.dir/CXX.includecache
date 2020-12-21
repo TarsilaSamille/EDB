@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tarsila/Área de Trabalho/EBD/vector/source/include/MyIterator.h
+
+/home/tarsila/Área de Trabalho/EBD/vector/source/include/vector.h
+cstdlib
+-
+iostream
+-
+exception
+-
+algorithm
+-
+initializer_list
+-
+iterator
+-
+stdexcept
+-
+string
+-
+./MyIterator.h
+/home/tarsila/Área de Trabalho/EBD/vector/source/include/MyIterator.h
+
+/home/tarsila/Área de Trabalho/EBD/vector/source/src/main.cpp
+../include/vector.h
+/home/tarsila/Área de Trabalho/EBD/vector/source/include/vector.h
+

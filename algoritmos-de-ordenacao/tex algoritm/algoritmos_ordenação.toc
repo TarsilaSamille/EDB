@@ -1,0 +1,68 @@
+\babel@toc {portuges}{}
+\contentsline {section}{\numberline {1}Introdução}{1}%
+\contentsline {section}{\numberline {2}Metodologia}{1}%
+\contentsline {subsection}{\numberline {2.1}Materiais utilizados}{1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Computador}{1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Ferramentas de programação}{1}%
+\contentsline {subsection}{\numberline {2.2}Método de comparações }{2}%
+\contentsline {section}{\numberline {3}Resultados}{2}%
+\contentsline {subsection}{\numberline {3.1}Tabelas - por algoritmo}{2}%
+\contentsline {subsubsection}{\numberline {3.1.1}Insertion}{2}%
+\contentsline {subsubsection}{\numberline {3.1.2}Selection}{5}%
+\contentsline {subsubsection}{\numberline {3.1.3}Bubble}{7}%
+\contentsline {subsubsection}{\numberline {3.1.4}Shell}{9}%
+\contentsline {subsubsection}{\numberline {3.1.5}Quick}{11}%
+\contentsline {subsubsection}{\numberline {3.1.6}Merge}{13}%
+\contentsline {subsubsection}{\numberline {3.1.7}Radix}{15}%
+\contentsline {subsection}{\numberline {3.2}Tabelas - por tipo de amostra }{18}%
+\contentsline {subsubsection}{\numberline {3.2.1}Crescente}{18}%
+\contentsline {subsubsection}{\numberline {3.2.2}Decrescente}{20}%
+\contentsline {subsubsection}{\numberline {3.2.3}100\% Aleatória}{22}%
+\contentsline {subsubsection}{\numberline {3.2.4}75\% Aleatória}{24}%
+\contentsline {subsubsection}{\numberline {3.2.5}50\% Aleatória}{25}%
+\contentsline {subsubsection}{\numberline {3.2.6}25\% Aleatória}{27}%
+\contentsline {subsection}{\numberline {3.3}Gráficos - por algoritmo }{30}%
+\contentsline {subsubsection}{\numberline {3.3.1}Insertion Sort}{30}%
+\contentsline {subsubsection}{\numberline {3.3.2}Selection Sort}{31}%
+\contentsline {subsubsection}{\numberline {3.3.3}Bubble Sort}{32}%
+\contentsline {subsubsection}{\numberline {3.3.4}Shell Sort}{33}%
+\contentsline {subsubsection}{\numberline {3.3.5}Quick Sort}{34}%
+\contentsline {subsubsection}{\numberline {3.3.6}Merge Sort}{35}%
+\contentsline {subsubsection}{\numberline {3.3.7}Radix Sort}{36}%
+\contentsline {subsection}{\numberline {3.4}Gráficos - por tipo de amostra }{37}%
+\contentsline {subsubsection}{\numberline {3.4.1}Crescente}{37}%
+\contentsline {subsubsection}{\numberline {3.4.2}Decrescente}{38}%
+\contentsline {subsubsection}{\numberline {3.4.3}100\% Aleatória}{39}%
+\contentsline {subsubsection}{\numberline {3.4.4}75\% Aleatória}{41}%
+\contentsline {subsubsection}{\numberline {3.4.5}50\% Aleatória}{42}%
+\contentsline {subsubsection}{\numberline {3.4.6}25\% Aleatória}{44}%
+\contentsline {section}{\numberline {4}Discussão}{46}%
+\contentsline {subsection}{\numberline {4.1}Geral}{46}%
+\contentsline {subsection}{\numberline {4.2}Quais algoritmos para qual cenários?}{46}%
+\contentsline {subsection}{\numberline {4.3}Radix vs. Outros}{46}%
+\contentsline {subsection}{\numberline {4.4}Quick sort vs. Merge sort}{46}%
+\contentsline {subsection}{\numberline {4.5}Picos e Vales}{47}%
+\contentsline {subsection}{\numberline {4.6}Análise empírica vs. Análise matemática}{47}%
+\contentsline {section}{Bibliografia}{48}%
+\contentsline {section}{Anexo}{49}%
+\contentsline {subsection}{\numberline {4.7}Função auxiliar para troca de posição}{49}%
+\contentsline {subsection}{\numberline {4.8}Insertion Sort}{49}%
+\contentsline {subsection}{\numberline {4.9}Selection Sort}{49}%
+\contentsline {subsection}{\numberline {4.10}Bubble Sort}{49}%
+\contentsline {subsection}{\numberline {4.11}Shell Sort}{50}%
+\contentsline {subsection}{\numberline {4.12}Quick Sort}{50}%
+\contentsline {subsubsection}{\numberline {4.12.1}Passa do formato padrão (array, size) para o do Quick}{50}%
+\contentsline {subsubsection}{\numberline {4.12.2}Particiona}{50}%
+\contentsline {subsubsection}{\numberline {4.12.3}Pricipal}{50}%
+\contentsline {subsection}{\numberline {4.13}Merge Sort}{51}%
+\contentsline {subsubsection}{\numberline {4.13.1}Passa do formato padrão (array, size) para o do merge}{51}%
+\contentsline {subsubsection}{\numberline {4.13.2}Pricipal que divide em 2 subarrays}{51}%
+\contentsline {subsubsection}{\numberline {4.13.3}Função que mistura (merge) os 2 subarrays}{51}%
+\contentsline {subsection}{\numberline {4.14}Radix Sort}{52}%
+\contentsline {subsection}{\numberline {4.15}Codifo Gerar Array}{53}%
+\contentsline {subsubsection}{\numberline {4.15.1}Na ordem crescente}{53}%
+\contentsline {subsubsection}{\numberline {4.15.2}Na ordem decrescente}{53}%
+\contentsline {subsubsection}{\numberline {4.15.3}Aleatória}{53}%
+\contentsline {subsubsection}{\numberline {4.15.4}50\% aleatória}{53}%
+\contentsline {subsubsection}{\numberline {4.15.5}75\% aleatória}{53}%
+\contentsline {subsubsection}{\numberline {4.15.6}25\% aleatória}{53}%

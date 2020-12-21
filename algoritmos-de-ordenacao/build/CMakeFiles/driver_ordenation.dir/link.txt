@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall  -O3   CMakeFiles/driver_ordenation.dir/src/app_ordenation.cpp.o CMakeFiles/driver_ordenation.dir/src/ordenation.cpp.o  -o driver_ordenation 

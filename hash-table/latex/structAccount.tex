@@ -1,0 +1,67 @@
+\hypertarget{structAccount}{}\doxysection{Referência à estrutura Account}
+\label{structAccount}\index{Account@{Account}}
+
+
+Represents a bank account.  
+
+
+
+
+{\ttfamily \#include $<$account.\+h$>$}
+
+\doxysubsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structAccount_a4e6567cf007e51c8b89ce1fb7f9f2221}\label{structAccount_a4e6567cf007e51c8b89ce1fb7f9f2221}} 
+using {\bfseries Acct\+Key} = std\+::tuple$<$ std\+::string, int, int, int $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structAccount_ac416f8cc699a83b61920b76c0a3dcc71}\label{structAccount_ac416f8cc699a83b61920b76c0a3dcc71}} 
+\mbox{\hyperlink{structAccount_ac416f8cc699a83b61920b76c0a3dcc71}{Account}} (std\+::string=\char`\"{}$<$empty$>$\char`\"{}, int=0, int=0, int=0, float=0.f)
+\begin{DoxyCompactList}\small\item\em Basic constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structAccount_a77c477c21d2eac5d4967170a9ce5fc11}\label{structAccount_a77c477c21d2eac5d4967170a9ce5fc11}} 
+Acct\+Key \mbox{\hyperlink{structAccount_a77c477c21d2eac5d4967170a9ce5fc11}{get\+Key}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the account key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structAccount_af0fde72eb2a354280bfda0d1425d3e07}\label{structAccount_af0fde72eb2a354280bfda0d1425d3e07}} 
+std\+::string \mbox{\hyperlink{structAccount_af0fde72eb2a354280bfda0d1425d3e07}{m\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em client name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structAccount_a37b2a7fc3c051b25a40a165239917afb}\label{structAccount_a37b2a7fc3c051b25a40a165239917afb}} 
+int \mbox{\hyperlink{structAccount_a37b2a7fc3c051b25a40a165239917afb}{m\+\_\+bank\+\_\+code}}
+\begin{DoxyCompactList}\small\item\em Bank id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structAccount_a52908ea7db7c7d77c264311bb7a63db2}\label{structAccount_a52908ea7db7c7d77c264311bb7a63db2}} 
+int \mbox{\hyperlink{structAccount_a52908ea7db7c7d77c264311bb7a63db2}{m\+\_\+branch\+\_\+code}}
+\begin{DoxyCompactList}\small\item\em Branch id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structAccount_ae4cecd212a86a8f23c51d1a4240beccd}\label{structAccount_ae4cecd212a86a8f23c51d1a4240beccd}} 
+int \mbox{\hyperlink{structAccount_ae4cecd212a86a8f23c51d1a4240beccd}{m\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structAccount}{Account}} number. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structAccount_ac3210bf07613a2eb83410b4f09807e68}\label{structAccount_ac3210bf07613a2eb83410b4f09807e68}} 
+float \mbox{\hyperlink{structAccount_ac3210bf07613a2eb83410b4f09807e68}{m\+\_\+balance}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structAccount}{Account}} balance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structAccount_a417160cc74cd4e58a557eeced84f03b1}\label{structAccount_a417160cc74cd4e58a557eeced84f03b1}} 
+std\+::ostream \& \mbox{\hyperlink{structAccount_a417160cc74cd4e58a557eeced84f03b1}{operator$<$$<$}} (std\+::ostream \&\+\_\+os, const \mbox{\hyperlink{structAccount}{Account}} \&\+\_\+acct)
+\begin{DoxyCompactList}\small\item\em Stream extractor of the account information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Represents a bank account. 
+
+\begin{DoxyAuthor}{Autor}
+\+: Selan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+November, 28th 2018. 
+\end{DoxyDate}
+
+
+A documentação para esta estrutura foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+include/account.\+h\item 
+src/\mbox{\hyperlink{account_8cpp}{account.\+cpp}}\end{DoxyCompactItemize}

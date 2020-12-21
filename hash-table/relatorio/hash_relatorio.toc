@@ -1,0 +1,16 @@
+\babel@toc {portuges}{}
+\contentsline {section}{\numberline {1}Introdução}{1}%
+\contentsline {section}{\numberline {2}Relatório}{1}%
+\contentsline {subsection}{\numberline {2.1}Dispersão}{1}%
+\contentsline {subsection}{\numberline {2.2}Abordagens}{2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Sondagem Linear}{2}%
+\contentsline {subsubsection}{\numberline {2.2.2}Encadeamento Separado }{2}%
+\contentsline {subsection}{\numberline {2.3}Item de dados}{3}%
+\contentsline {subsection}{\numberline {2.4}Método de Dispersão - Hash}{3}%
+\contentsline {subsection}{\numberline {2.5}Operações básicas}{3}%
+\contentsline {subsubsection}{\numberline {2.5.1}Operação de Pesquisa}{3}%
+\contentsline {subsubsection}{\numberline {2.5.2}Operação de Inserir}{3}%
+\contentsline {subsubsection}{\numberline {2.5.3}Operação de Excluir}{4}%
+\contentsline {subsection}{\numberline {2.6}Comparações}{4}%
+\contentsline {subsection}{\numberline {2.7}SHA-1}{6}%
+\contentsline {section}{Bibliografia}{7}%

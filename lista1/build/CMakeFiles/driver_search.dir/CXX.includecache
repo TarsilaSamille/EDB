@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tarsila/Área de Trabalho/EBD/lista1/include/searching.h
+tuple
+-
+iterator
+-
+
+/home/tarsila/Área de Trabalho/EBD/lista1/src/searching.cpp
+iostream
+-
+algorithm
+-
+tuple
+-
+../include/searching.h
+/home/tarsila/Área de Trabalho/EBD/lista1/include/searching.h
+

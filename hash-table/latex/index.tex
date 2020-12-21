@@ -1,0 +1,49 @@
+\hypertarget{index_autotoc_md1}{}\doxysection{1. Introduction}\label{index_autotoc_md1}
+\hypertarget{index_autotoc_md2}{}\doxysubsection{Student\+: Társila Samille Santos da Silveira}\label{index_autotoc_md2}
+This project consists of the implementation of a data structure of the dispersion table in C ++. This is an example code developed in E\+D\+B1 classes.\hypertarget{index_autotoc_md3}{}\doxysection{Compiling}\label{index_autotoc_md3}
+This project may be compiled with \href{https://cmake.org}{\texttt{ C\+Make}}. C\+Make is an open-\/source, cross-\/platform family of tools designed to build, test and package software. Basically, cmake reads a script ({\ttfamily C\+Make\+Lists.\+txt}) with meta-\/information on the project and {\bfseries{creates a Makefile automatically}}, tailored to your system configuration.
+
+If you have already installed it, open a terminal in the project\textquotesingle{}s root folder.
+
+Create the \char`\"{}build\char`\"{} directory and enter it\+: {\ttfamily \`{}\$ cd build\`{}}
+
+Now generate the files for compilation with\+: {\ttfamily \`{}\$ cmake -\/G\char`\"{} Unix Makefiles \char`\"{}..\`{}}
+
+Now compile the project with\+: {\ttfamily \$ make}
+
+C\+Make supports {\bfseries{out-\/of-\/source}} build. This means the {\itshape source code} is stored in {\bfseries{one}} folder and the {\itshape generated executable files} should be stored in {\bfseries{another}} folder\+: project should never mix-\/up the source three with the build tree.
+
+In particular, this project creates two {\bfseries{targets}} (executable)\+:
+\begin{DoxyEnumerate}
+\item a simple driver , called {\ttfamily driver\+\_\+hash} (driver hash table), and
+\item the tests, called {\ttfamily run\+\_\+tests}.
+\end{DoxyEnumerate}
+
+But don\textquotesingle{}t worry, they are already set up in the {\ttfamily C\+Make\+Lists.\+txt} script. The executables are created inside the {\ttfamily build} directory.
+
+For further details, please refer to the \href{https://cmake.org/cmake/help/v3.14/manual/cmake.1.html}{\texttt{ cmake documentation website}}.\hypertarget{index_autotoc_md4}{}\doxysection{Running}\label{index_autotoc_md4}
+From the project\textquotesingle{}s root folder, run as usual (assuming {\ttfamily \$} is the terminal prompt)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ ./build/driver\_hash}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ ./build/run\_tests}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md5}{}\doxysection{Doxygen Documentation}\label{index_autotoc_md5}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ ./html/index.html}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md6}{}\doxysection{Report}\label{index_autotoc_md6}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ ./hash\_relatório.pdf}
+\end{DoxyCode}
+
+
+\copyright{} U\+F\+RN 2020. 

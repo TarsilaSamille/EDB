@@ -1,0 +1,50 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/include/ordenation.h
+iterator
+-
+
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/lib/test_manager.cpp
+test_manager.h
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/lib/test_manager.h
+
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/lib/test_manager.h
+iostream
+-
+iomanip
+-
+algorithm
+-
+string
+-
+unordered_map
+-
+vector
+-
+
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/src/ordenation.cpp
+iostream
+-
+../include/ordenation.h
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/include/ordenation.h
+
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/test/run_tests.cpp
+iostream
+-
+cassert
+-
+random
+-
+iterator
+-
+../lib/test_manager.h
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/lib/test_manager.h
+../include/searching.h
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/include/searching.h
+

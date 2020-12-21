@@ -1,0 +1,4 @@
+/home/tarsila/Área de Trabalho/EBD/hash-table/source_STUDENTS/build/CMakeFiles/rebuild_cache.dir
+/home/tarsila/Área de Trabalho/EBD/hash-table/source_STUDENTS/build/CMakeFiles/edit_cache.dir
+/home/tarsila/Área de Trabalho/EBD/hash-table/source_STUDENTS/build/CMakeFiles/driver_hash.dir
+/home/tarsila/Área de Trabalho/EBD/hash-table/source_STUDENTS/build/CMakeFiles/run_tests.dir

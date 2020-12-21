@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tarsila/Área de Trabalho/EBD/hash-table/source_STUDENTS/include/account.h
+iostream
+-
+functional
+-
+tuple
+-
+
+/home/tarsila/Área de Trabalho/EBD/hash-table/source_STUDENTS/include/hashtbl.h
+iostream
+-
+forward_list
+-
+exception
+-
+
+/home/tarsila/Área de Trabalho/EBD/hash-table/source_STUDENTS/src/driver_ht.cpp
+iostream
+-
+functional
+-
+tuple
+-
+cassert
+-
+../include/hashtbl.h
+/home/tarsila/Área de Trabalho/EBD/hash-table/source_STUDENTS/include/hashtbl.h
+../include/account.h
+/home/tarsila/Área de Trabalho/EBD/hash-table/source_STUDENTS/include/account.h
+

@@ -1,0 +1,25 @@
+\hypertarget{MyIterator_8h}{}\doxysection{Referência ao ficheiro source/include/\+My\+Iterator.h}
+\label{MyIterator_8h}\index{source/include/MyIterator.h@{source/include/MyIterator.h}}
+Este grafo mostra quais são os ficheiros que incluem directamente ou indirectamente este ficheiro\+:
+% FIG 0
+\doxysubsection*{Componentes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classMyIterator}{My\+Iterator$<$ T $>$}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+\begin{DoxyAuthor}{Autor}
+Társila Samille (\href{mailto:tarsillasamile@gmail.com}{\texttt{ tarsillasamile@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versão}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+2020-\/11-\/08
+\end{DoxyDate}
+\hypertarget{vector_8h_DESCRIÇÃO}{}\doxysubsection{D\+E\+S\+C\+R\+IÇÃO}\label{vector_8h_DESCRIÇÃO}
+Iterator usado pela classe vector. \begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}

@@ -1,0 +1,238 @@
+\hypertarget{ordenation_8h}{}\doxysection{include/ordenation.h File Reference}
+\label{ordenation_8h}\index{include/ordenation.h@{include/ordenation.h}}
+{\ttfamily \#include $<$iterator$>$}\newline
+Include dependency graph for ordenation.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ordenation_8h_a96d8d49bc578f5bda86f4dde30252724}\label{ordenation_8h_a96d8d49bc578f5bda86f4dde30252724}} 
+using {\bfseries oa\+::value\+\_\+type} = int
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ordenation_8h_aad31aa205389872b46212c96123f7bd2}{oa\+::insertionsort}} (value\+\_\+type $\ast$array, int size)
+\begin{DoxyCompactList}\small\item\em insertion sort \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ordenation_8h_a93cf65933919db9096bfeed2120da4d4}{oa\+::selectionsort}} (value\+\_\+type $\ast$array, int size)
+\begin{DoxyCompactList}\small\item\em selectio sort \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ordenation_8h_a45a1ae6f080a73f21d8b8b37cf8a9e19}{oa\+::bubblesort}} (value\+\_\+type $\ast$array, int size)
+\begin{DoxyCompactList}\small\item\em bubble sort \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ordenation_8h_afc8e28a3d0a83354b39e54ec6093ff56}{oa\+::shellsort}} (value\+\_\+type $\ast$array, int size)
+\begin{DoxyCompactList}\small\item\em shell sort \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ordenation_8h_a63ac4f1a2e75b0ef6bec772570946018}{oa\+::quicksort}} (value\+\_\+type $\ast$array, int size)
+\begin{DoxyCompactList}\small\item\em quick sort / passa da estrutura padrão (value\+\_\+type $\ast$ array, int size ) para a requerida pelo algoritimo (value\+\_\+type $\ast$ array, int low, int high) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ordenation_8h_a0ad1cdeca6344ca8bb554a64cf619072}{oa\+::quicksort}} (value\+\_\+type $\ast$array, int low, int high)
+\begin{DoxyCompactList}\small\item\em quick sort \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ordenation_8h_acd05c2b41e2d7e653e9e315e21bb678b}{oa\+::mergesort}} (value\+\_\+type $\ast$array, int size)
+\begin{DoxyCompactList}\small\item\em merge sort / passa da estrutura padrão (value\+\_\+type $\ast$ array, int size ) para a requerida pelo algoritimo (value\+\_\+type $\ast$ array, int l, int r). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ordenation_8h_a927da6a8983c4f0ab1ae3f00e76bedf9}{oa\+::mergesort}} (value\+\_\+type $\ast$array, int l, int r)
+\begin{DoxyCompactList}\small\item\em merge sort \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ordenation_8h_a75dd5a377b3672b38f7f177fc3716760}{oa\+::merge}} (value\+\_\+type $\ast$array, int l, int m, int r)
+\begin{DoxyCompactList}\small\item\em mistura os arrays \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ordenation_8h_aee78b90dd33f20ac39fa3b478fb364d8}{oa\+::radixsort}} (value\+\_\+type $\ast$array, int size)
+\begin{DoxyCompactList}\small\item\em radix sort \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Társila Samille Santos da Silveira (\href{mailto:tarsillasamile@gmail.com}{\texttt{ tarsillasamile@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/10-\/12
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ordenation_8h_a45a1ae6f080a73f21d8b8b37cf8a9e19}\label{ordenation_8h_a45a1ae6f080a73f21d8b8b37cf8a9e19}} 
+\index{ordenation.h@{ordenation.h}!bubblesort@{bubblesort}}
+\index{bubblesort@{bubblesort}!ordenation.h@{ordenation.h}}
+\doxysubsubsection{\texorpdfstring{bubblesort()}{bubblesort()}}
+{\footnotesize\ttfamily void oa\+::bubblesort (\begin{DoxyParamCaption}\item[{value\+\_\+type $\ast$}]{array,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+bubble sort 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array a ser ordenado \\
+\hline
+{\em size} & tamanho do array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ordenation_8h_aad31aa205389872b46212c96123f7bd2}\label{ordenation_8h_aad31aa205389872b46212c96123f7bd2}} 
+\index{ordenation.h@{ordenation.h}!insertionsort@{insertionsort}}
+\index{insertionsort@{insertionsort}!ordenation.h@{ordenation.h}}
+\doxysubsubsection{\texorpdfstring{insertionsort()}{insertionsort()}}
+{\footnotesize\ttfamily void oa\+::insertionsort (\begin{DoxyParamCaption}\item[{value\+\_\+type $\ast$}]{array,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+insertion sort 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array a ser ordenado \\
+\hline
+{\em size} & tamanho do array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ordenation_8h_a75dd5a377b3672b38f7f177fc3716760}\label{ordenation_8h_a75dd5a377b3672b38f7f177fc3716760}} 
+\index{ordenation.h@{ordenation.h}!merge@{merge}}
+\index{merge@{merge}!ordenation.h@{ordenation.h}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily void oa\+::merge (\begin{DoxyParamCaption}\item[{value\+\_\+type $\ast$}]{array,  }\item[{int}]{l,  }\item[{int}]{m,  }\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+mistura os arrays 
+
+merge sort
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array a ser ordenado \\
+\hline
+{\em l} & posição mais a esquerda \\
+\hline
+{\em m} & metade \\
+\hline
+{\em r} & posição mais a direita \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ordenation_8h_a927da6a8983c4f0ab1ae3f00e76bedf9}\label{ordenation_8h_a927da6a8983c4f0ab1ae3f00e76bedf9}} 
+\index{ordenation.h@{ordenation.h}!mergesort@{mergesort}}
+\index{mergesort@{mergesort}!ordenation.h@{ordenation.h}}
+\doxysubsubsection{\texorpdfstring{mergesort()}{mergesort()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void oa\+::mergesort (\begin{DoxyParamCaption}\item[{value\+\_\+type $\ast$}]{array,  }\item[{int}]{l,  }\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+merge sort 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array a ser ordenado \\
+\hline
+{\em l} & posição mais a esquerda \\
+\hline
+{\em r} & posição mais a direita \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ordenation_8h_acd05c2b41e2d7e653e9e315e21bb678b}\label{ordenation_8h_acd05c2b41e2d7e653e9e315e21bb678b}} 
+\index{ordenation.h@{ordenation.h}!mergesort@{mergesort}}
+\index{mergesort@{mergesort}!ordenation.h@{ordenation.h}}
+\doxysubsubsection{\texorpdfstring{mergesort()}{mergesort()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void oa\+::mergesort (\begin{DoxyParamCaption}\item[{value\+\_\+type $\ast$}]{array,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+merge sort / passa da estrutura padrão (value\+\_\+type $\ast$ array, int size ) para a requerida pelo algoritimo (value\+\_\+type $\ast$ array, int l, int r). 
+
+merge sort
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array a ser ordenado \\
+\hline
+{\em size} & tamanho do array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ordenation_8h_a0ad1cdeca6344ca8bb554a64cf619072}\label{ordenation_8h_a0ad1cdeca6344ca8bb554a64cf619072}} 
+\index{ordenation.h@{ordenation.h}!quicksort@{quicksort}}
+\index{quicksort@{quicksort}!ordenation.h@{ordenation.h}}
+\doxysubsubsection{\texorpdfstring{quicksort()}{quicksort()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void oa\+::quicksort (\begin{DoxyParamCaption}\item[{value\+\_\+type $\ast$}]{array,  }\item[{int}]{l,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+quick sort 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array a ser ordenado \\
+\hline
+{\em l} & posição menor \\
+\hline
+{\em h} & posição maior \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ordenation_8h_a63ac4f1a2e75b0ef6bec772570946018}\label{ordenation_8h_a63ac4f1a2e75b0ef6bec772570946018}} 
+\index{ordenation.h@{ordenation.h}!quicksort@{quicksort}}
+\index{quicksort@{quicksort}!ordenation.h@{ordenation.h}}
+\doxysubsubsection{\texorpdfstring{quicksort()}{quicksort()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void oa\+::quicksort (\begin{DoxyParamCaption}\item[{value\+\_\+type $\ast$}]{array,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+quick sort / passa da estrutura padrão (value\+\_\+type $\ast$ array, int size ) para a requerida pelo algoritimo (value\+\_\+type $\ast$ array, int low, int high) 
+
+quick sort
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array a ser ordenado \\
+\hline
+{\em size} & tamanho do array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ordenation_8h_aee78b90dd33f20ac39fa3b478fb364d8}\label{ordenation_8h_aee78b90dd33f20ac39fa3b478fb364d8}} 
+\index{ordenation.h@{ordenation.h}!radixsort@{radixsort}}
+\index{radixsort@{radixsort}!ordenation.h@{ordenation.h}}
+\doxysubsubsection{\texorpdfstring{radixsort()}{radixsort()}}
+{\footnotesize\ttfamily void oa\+::radixsort (\begin{DoxyParamCaption}\item[{value\+\_\+type $\ast$}]{array,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+radix sort 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array a ser ordenado \\
+\hline
+{\em size} & tamanho do array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ordenation_8h_a93cf65933919db9096bfeed2120da4d4}\label{ordenation_8h_a93cf65933919db9096bfeed2120da4d4}} 
+\index{ordenation.h@{ordenation.h}!selectionsort@{selectionsort}}
+\index{selectionsort@{selectionsort}!ordenation.h@{ordenation.h}}
+\doxysubsubsection{\texorpdfstring{selectionsort()}{selectionsort()}}
+{\footnotesize\ttfamily void oa\+::selectionsort (\begin{DoxyParamCaption}\item[{value\+\_\+type $\ast$}]{array,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+selectio sort 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array a ser ordenado \\
+\hline
+{\em size} & tamanho do array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ordenation_8h_afc8e28a3d0a83354b39e54ec6093ff56}\label{ordenation_8h_afc8e28a3d0a83354b39e54ec6093ff56}} 
+\index{ordenation.h@{ordenation.h}!shellsort@{shellsort}}
+\index{shellsort@{shellsort}!ordenation.h@{ordenation.h}}
+\doxysubsubsection{\texorpdfstring{shellsort()}{shellsort()}}
+{\footnotesize\ttfamily void oa\+::shellsort (\begin{DoxyParamCaption}\item[{value\+\_\+type $\ast$}]{array,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+shell sort 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array a ser ordenado \\
+\hline
+{\em size} & tamanho do array \\
+\hline
+\end{DoxyParams}

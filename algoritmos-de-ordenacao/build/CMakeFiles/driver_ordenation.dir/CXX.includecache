@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/include/ordenation.h
+iterator
+-
+
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/src/app_ordenation.cpp
+iostream
+-
+algorithm
+-
+iterator
+-
+sstream
+-
+../include/ordenation.h
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/include/ordenation.h
+
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/src/ordenation.cpp
+iostream
+-
+../include/ordenation.h
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/include/ordenation.h
+

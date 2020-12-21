@@ -1,0 +1,42 @@
+\hypertarget{md_README_autotoc_md1}{}\doxysection{1. Introduction}\label{md_README_autotoc_md1}
+\hypertarget{md_README_autotoc_md2}{}\doxysubsection{Student\+: Társila Samille Santos da Silveira}\label{md_README_autotoc_md2}
+This project contains the implementation of a generic static vector class, an array with dinamic alocation called {\ttfamily \mbox{\hyperlink{classsc_1_1vector}{sc\+::vector}}}. This is an example code developed in E\+D\+B1 classes to illustrate a possible implementation for a {\bfseries{Data Structure}}, based on the {\itshape Abstract Data Type} (A\+DT) {\bfseries{sequence container}} or simply {\bfseries{list}}.\hypertarget{md_README_autotoc_md3}{}\doxysection{Compiling}\label{md_README_autotoc_md3}
+This project may be compiled with \href{https://cmake.org}{\texttt{ C\+Make}}. C\+Make is an open-\/source, cross-\/platform family of tools designed to build, test and package software. Basically, cmake reads a script ({\ttfamily C\+Make\+Lists.\+txt}) with meta-\/information on the project and {\bfseries{creates a Makefile automatically}}, tailored to your system configuration. After that, you may run the {\ttfamily make} command, as usual. Alternatively, the same script might be used to create Xcode projects, Ninja, or Microsoft Visual Studio projects, for instance.
+
+C\+Make supports {\bfseries{out-\/of-\/source}} build. This means the {\itshape source code} is stored in {\bfseries{one}} folder and the {\itshape generated executable files} should be stored in {\bfseries{another}} folder\+: project should never mix-\/up the source three with the build tree.
+
+In particular, this project creates two {\bfseries{targets}} (executable)\+:
+\begin{DoxyEnumerate}
+\item a simple driver (simulating a client using the {\ttfamily \mbox{\hyperlink{classsc_1_1vector}{sc\+::vector}}}), called {\ttfamily run\+\_\+drive} (driver vector), and
+\item the tests, called {\ttfamily run\+\_\+tests}.
+\end{DoxyEnumerate}
+
+But don\textquotesingle{}t worry, they are already set up in the {\ttfamily C\+Make\+Lists.\+txt} script.
+
+To compile this project with \href{https://cmake.org}{\texttt{ cmake}} follow these steps (from the root folder)\+:
+
+
+\begin{DoxyEnumerate}
+\item {\ttfamily cmake -\/S source -\/Bbuild}\+: asks cmake to create the build directory and generate the Unix Makefile based on the script found in {\ttfamily C\+Make\+Lists.\+txt}, on the current level.
+\item {\ttfamily cmale -\/-\/build build}\+: triggers the compiling process that creates both targets (executable).D inside {\ttfamily build}.
+\end{DoxyEnumerate}
+
+The executables are created inside the {\ttfamily build} directory.
+
+For further details, please refer to the \href{https://cmake.org/cmake/help/v3.14/manual/cmake.1.html}{\texttt{ cmake documentation website}}.\hypertarget{md_README_autotoc_md4}{}\doxysection{Running}\label{md_README_autotoc_md4}
+From the project\textquotesingle{}s root folder, run as usual (assuming {\ttfamily \$} is the terminal prompt)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ ./build/run\_drive}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ ./build/run\_tests}
+\end{DoxyCode}
+
+
+\DoxyHorRuler{0}
+ \copyright{} D\+I\+M\+Ap/\+U\+F\+RN 2020. 

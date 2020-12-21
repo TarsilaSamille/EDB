@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tarsila/Área de Trabalho/EBD/lista1/include/algoritimos.h
+tuple
+-
+iterator
+-
+
+/home/tarsila/Área de Trabalho/EBD/lista1/src/main.cpp
+iostream
+-
+algorithm
+-
+iterator
+-
+sstream
+-
+tuple
+-
+stdio.h
+-
+../include/algoritimos.h
+/home/tarsila/Área de Trabalho/EBD/lista1/include/algoritimos.h
+

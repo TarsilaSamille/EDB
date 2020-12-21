@@ -1,0 +1,758 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Implementação de Tabela de Dispersão: Referência à classe Template ac::HashTbl&lt; KeyType, DataType, KeyHash, KeyEqual &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Implementação de Tabela de Dispersão
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>ac</b></li><li class="navelem"><a class="el" href="classac_1_1HashTbl.html">HashTbl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Tipos Públicos</a> &#124;
+<a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="#friends">Amigos</a> &#124;
+<a href="classac_1_1HashTbl-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe Template ac::HashTbl&lt; KeyType, DataType, KeyHash, KeyEqual &gt;</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Tipos Públicos</h2></td></tr>
+<tr class="memitem:a76da632822e2390a744f4f99be68a9d5"><td class="memItemLeft" align="right" valign="top"><a id="a76da632822e2390a744f4f99be68a9d5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Entry</b> = <a class="el" href="classac_1_1HashEntry.html">HashEntry</a>&lt; KeyType, DataType &gt;</td></tr>
+<tr class="separator:a76da632822e2390a744f4f99be68a9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0624267811178f07c5bf902404ee7626"><td class="memItemLeft" align="right" valign="top"><a id="a0624267811178f07c5bf902404ee7626"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>list_type</b> = std::forward_list&lt; <a class="el" href="classac_1_1HashEntry.html">Entry</a> &gt;</td></tr>
+<tr class="separator:a0624267811178f07c5bf902404ee7626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e2c03750f818eb1dd073c925e221a0"><td class="memItemLeft" align="right" valign="top"><a id="ae6e2c03750f818eb1dd073c925e221a0"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = std::size_t</td></tr>
+<tr class="separator:ae6e2c03750f818eb1dd073c925e221a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a24a68714542b6aeadff2a44470f8939a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#a24a68714542b6aeadff2a44470f8939a">HashTbl</a> (int tbl_size=DEFAULT_SIZE)</td></tr>
+<tr class="memdesc:a24a68714542b6aeadff2a44470f8939a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor que aloca dinamicamente em *m_data_table um vetor cujo tamanho é determinado como sendo o menor número primo ≥ que o valor especificado em tbl_size . Esta é a área de armazenamento dos dados, ou seja, cada elemento deste vetor é um ponteiro para uma lista de itens de tabela, ou <a class="el" href="classac_1_1HashEntry.html">HashEntry</a> .  <a href="classac_1_1HashTbl.html#a24a68714542b6aeadff2a44470f8939a">Mais...</a><br /></td></tr>
+<tr class="separator:a24a68714542b6aeadff2a44470f8939a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ae3d3c982c76c68d189515894773c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#a01ae3d3c982c76c68d189515894773c5">HashTbl</a> (const <a class="el" href="classac_1_1HashTbl.html">HashTbl</a> &amp;other)</td></tr>
+<tr class="memdesc:a01ae3d3c982c76c68d189515894773c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Destruidor da classe que libera a memória apontada por m_data_table . Antes de liberar a memória, percorre o vetor liberando a memória utilizada por cada lista de colisão.  <a href="classac_1_1HashTbl.html#a01ae3d3c982c76c68d189515894773c5">Mais...</a><br /></td></tr>
+<tr class="separator:a01ae3d3c982c76c68d189515894773c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88aa3e7c646fe6310bea58097a72dc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#ab88aa3e7c646fe6310bea58097a72dc1">HashTbl</a> (std::initializer_list&lt; <a class="el" href="classac_1_1HashEntry.html">Entry</a> &gt; ilist)</td></tr>
+<tr class="memdesc:ab88aa3e7c646fe6310bea58097a72dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constroi uma nova Hash Tbl a partir de uma lista.  <a href="classac_1_1HashTbl.html#ab88aa3e7c646fe6310bea58097a72dc1">Mais...</a><br /></td></tr>
+<tr class="separator:ab88aa3e7c646fe6310bea58097a72dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0907d777c09da3d1071c30a96939c71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classac_1_1HashTbl.html">HashTbl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#ab0907d777c09da3d1071c30a96939c71">operator=</a> (const <a class="el" href="classac_1_1HashTbl.html">HashTbl</a> &amp;other)</td></tr>
+<tr class="separator:ab0907d777c09da3d1071c30a96939c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13febc90fbc2417ec7eff89dd282cd48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classac_1_1HashTbl.html">HashTbl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#a13febc90fbc2417ec7eff89dd282cd48">operator=</a> (std::initializer_list&lt; <a class="el" href="classac_1_1HashEntry.html">Entry</a> &gt; ilist)</td></tr>
+<tr class="separator:a13febc90fbc2417ec7eff89dd282cd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a82580a5f67dd0b0b90225b1090b751"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#a5a82580a5f67dd0b0b90225b1090b751">~HashTbl</a> ()</td></tr>
+<tr class="memdesc:a5a82580a5f67dd0b0b90225b1090b751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroi o virtual object Hash Tbl.  <a href="classac_1_1HashTbl.html#a5a82580a5f67dd0b0b90225b1090b751">Mais...</a><br /></td></tr>
+<tr class="separator:a5a82580a5f67dd0b0b90225b1090b751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad748587e73645e2e1ce21e6d41b845"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#a0ad748587e73645e2e1ce21e6d41b845">insert</a> (const KeyType &amp;key, const DataType &amp;data)</td></tr>
+<tr class="memdesc:a0ad748587e73645e2e1ce21e6d41b845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere na tabela a informação contida em data e associada a uma chave key . Calcula o endereço end que a informação data deve ocupar na tabela e o armazena na lista de colisão correspondente, ou seja, em m_data_table[end] .  <a href="classac_1_1HashTbl.html#a0ad748587e73645e2e1ce21e6d41b845">Mais...</a><br /></td></tr>
+<tr class="separator:a0ad748587e73645e2e1ce21e6d41b845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230551b78c6be5ed6c58612d0fdbafd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#a230551b78c6be5ed6c58612d0fdbafd8">erase</a> (const KeyType &amp;key)</td></tr>
+<tr class="memdesc:a230551b78c6be5ed6c58612d0fdbafd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove um item de tabela identificado por sua chave key .  <a href="classac_1_1HashTbl.html#a230551b78c6be5ed6c58612d0fdbafd8">Mais...</a><br /></td></tr>
+<tr class="separator:a230551b78c6be5ed6c58612d0fdbafd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d35ca3cdad06901dc453104076cf80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#a07d35ca3cdad06901dc453104076cf80">retrieve</a> (const KeyType &amp;key, DataType &amp;data) const</td></tr>
+<tr class="memdesc:a07d35ca3cdad06901dc453104076cf80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupera em data a informação associada a chave key passada como argumento para o método.  <a href="classac_1_1HashTbl.html#a07d35ca3cdad06901dc453104076cf80">Mais...</a><br /></td></tr>
+<tr class="separator:a07d35ca3cdad06901dc453104076cf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fda203a257af1e3913128f03926878f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#a4fda203a257af1e3913128f03926878f">clear</a> (void)</td></tr>
+<tr class="memdesc:a4fda203a257af1e3913128f03926878f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpa (apaga) toda a memória associada às listas de colisão da tabela, removendo todos seus elementos.  <a href="classac_1_1HashTbl.html#a4fda203a257af1e3913128f03926878f">Mais...</a><br /></td></tr>
+<tr class="separator:a4fda203a257af1e3913128f03926878f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980e0609d4838c8afb7fa63a94ab6f7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#a980e0609d4838c8afb7fa63a94ab6f7e">empty</a> (void) const</td></tr>
+<tr class="separator:a980e0609d4838c8afb7fa63a94ab6f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7498ffacffaa98fd34382f2585685d5a"><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#a7498ffacffaa98fd34382f2585685d5a">size</a> (void) const</td></tr>
+<tr class="memdesc:a7498ffacffaa98fd34382f2585685d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Retorna a quantidade de elementos atualmente armazenados na tabela.  <a href="classac_1_1HashTbl.html#a7498ffacffaa98fd34382f2585685d5a">Mais...</a><br /></td></tr>
+<tr class="separator:a7498ffacffaa98fd34382f2585685d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afde79bb1becbca4bff976aad011fd9aa"><td class="memItemLeft" align="right" valign="top">DataType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#afde79bb1becbca4bff976aad011fd9aa">operator[]</a> (const KeyType &amp;key)</td></tr>
+<tr class="memdesc:afde79bb1becbca4bff976aad011fd9aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna uma referência para o dado associado a chave key fornecida, se existir. Se a chave não estiver na tabela, o método realizar a inserção e retorna a referência para o dado recém inserido na tabela.  <a href="classac_1_1HashTbl.html#afde79bb1becbca4bff976aad011fd9aa">Mais...</a><br /></td></tr>
+<tr class="separator:afde79bb1becbca4bff976aad011fd9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70684c20c4baf933a33e472493ff2cd3"><td class="memItemLeft" align="right" valign="top">DataType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#a70684c20c4baf933a33e472493ff2cd3">at</a> (const KeyType &amp;key)</td></tr>
+<tr class="memdesc:a70684c20c4baf933a33e472493ff2cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Retorna uma referência para o dado associado a chave key fornecida. Se a chave não estiver na tabela, o método lança uma exceção do tipo std::out_of_range .  <a href="classac_1_1HashTbl.html#a70684c20c4baf933a33e472493ff2cd3">Mais...</a><br /></td></tr>
+<tr class="separator:a70684c20c4baf933a33e472493ff2cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4372bdd706aec2568f1ed1028cf579a6"><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#a4372bdd706aec2568f1ed1028cf579a6">count</a> (const KeyType &amp;key) const</td></tr>
+<tr class="memdesc:a4372bdd706aec2568f1ed1028cf579a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a quantidade de elementos da tabela que estão na lista de colisão associada a chave key .  <a href="classac_1_1HashTbl.html#a4372bdd706aec2568f1ed1028cf579a6">Mais...</a><br /></td></tr>
+<tr class="separator:a4372bdd706aec2568f1ed1028cf579a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:ac20c9d5bfdf656fe2fdf1fc4d9156efa"><td class="memItemLeft" align="right" valign="top"><a id="ac20c9d5bfdf656fe2fdf1fc4d9156efa"></a>
+<a class="el" href="structKeyHash.html">KeyHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#ac20c9d5bfdf656fe2fdf1fc4d9156efa">hashFunctor</a></td></tr>
+<tr class="memdesc:ac20c9d5bfdf656fe2fdf1fc4d9156efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instacia o functor para primary hash. <br /></td></tr>
+<tr class="separator:ac20c9d5bfdf656fe2fdf1fc4d9156efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693fd1487e8e1719e7be0d179dbca9f4"><td class="memItemLeft" align="right" valign="top"><a id="a693fd1487e8e1719e7be0d179dbca9f4"></a>
+<a class="el" href="structKeyEqual.html">KeyEqual</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#a693fd1487e8e1719e7be0d179dbca9f4">equalFunctor</a></td></tr>
+<tr class="memdesc:a693fd1487e8e1719e7be0d179dbca9f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instacia o functor para equal for test. <br /></td></tr>
+<tr class="separator:a693fd1487e8e1719e7be0d179dbca9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Amigos</h2></td></tr>
+<tr class="memitem:a4c43d1892457e01eb664da62966b7d60"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classac_1_1HashTbl.html#a4c43d1892457e01eb664da62966b7d60">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classac_1_1HashTbl.html">HashTbl</a> &amp;hash)</td></tr>
+<tr class="memdesc:a4c43d1892457e01eb664da62966b7d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">: E um método de depuração usado para gerar uma representação textual da tabela e seus elementos.  <a href="classac_1_1HashTbl.html#a4c43d1892457e01eb664da62966b7d60">Mais...</a><br /></td></tr>
+<tr class="separator:a4c43d1892457e01eb664da62966b7d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a id="a24a68714542b6aeadff2a44470f8939a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24a68714542b6aeadff2a44470f8939a">&#9670;&nbsp;</a></span>HashTbl() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::<a class="el" href="classac_1_1HashTbl.html">HashTbl</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tbl_size</em> = <code>DEFAULT_SIZE</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construtor que aloca dinamicamente em *m_data_table um vetor cujo tamanho é determinado como sendo o menor número primo ≥ que o valor especificado em tbl_size . Esta é a área de armazenamento dos dados, ou seja, cada elemento deste vetor é um ponteiro para uma lista de itens de tabela, ou <a class="el" href="classac_1_1HashEntry.html">HashEntry</a> . </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tbl_size</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a01ae3d3c982c76c68d189515894773c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ae3d3c982c76c68d189515894773c5">&#9670;&nbsp;</a></span>HashTbl() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::<a class="el" href="classac_1_1HashTbl.html">HashTbl</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classac_1_1HashTbl.html">HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>: Destruidor da classe que libera a memória apontada por m_data_table . Antes de liberar a memória, percorre o vetor liberando a memória utilizada por cada lista de colisão. </p>
+
+</div>
+</div>
+<a id="ab88aa3e7c646fe6310bea58097a72dc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab88aa3e7c646fe6310bea58097a72dc1">&#9670;&nbsp;</a></span>HashTbl() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::<a class="el" href="classac_1_1HashTbl.html">HashTbl</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classac_1_1HashEntry.html">Entry</a> &gt;&#160;</td>
+          <td class="paramname"><em>ilist</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constroi uma nova Hash Tbl a partir de uma lista. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ilist</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5a82580a5f67dd0b0b90225b1090b751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a82580a5f67dd0b0b90225b1090b751">&#9670;&nbsp;</a></span>~HashTbl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::~<a class="el" href="classac_1_1HashTbl.html">HashTbl</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroi o virtual object Hash Tbl. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos métodos</h2>
+<a id="a70684c20c4baf933a33e472493ff2cd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70684c20c4baf933a33e472493ff2cd3">&#9670;&nbsp;</a></span>at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataType&amp; <a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::at </td>
+          <td>(</td>
+          <td class="paramtype">const KeyType &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>: Retorna uma referência para o dado associado a chave key fornecida. Se a chave não estiver na tabela, o método lança uma exceção do tipo std::out_of_range . </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>DataType&amp; </dd></dl>
+
+</div>
+</div>
+<a id="a4fda203a257af1e3913128f03926878f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fda203a257af1e3913128f03926878f">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::clear </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Limpa (apaga) toda a memória associada às listas de colisão da tabela, removendo todos seus elementos. </p>
+
+</div>
+</div>
+<a id="a4372bdd706aec2568f1ed1028cf579a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4372bdd706aec2568f1ed1028cf579a6">&#9670;&nbsp;</a></span>count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_type <a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::count </td>
+          <td>(</td>
+          <td class="paramtype">const KeyType &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna a quantidade de elementos da tabela que estão na lista de colisão associada a chave key . </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>size_type </dd></dl>
+
+</div>
+</div>
+<a id="a980e0609d4838c8afb7fa63a94ab6f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980e0609d4838c8afb7fa63a94ab6f7e">&#9670;&nbsp;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::empty </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Retorna</dt><dd>true - a tabela de dispersão está vazia </dd>
+<dd>
+false - a tabela de dispersão não está vazia </dd></dl>
+
+</div>
+</div>
+<a id="a230551b78c6be5ed6c58612d0fdbafd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a230551b78c6be5ed6c58612d0fdbafd8">&#9670;&nbsp;</a></span>erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype">const KeyType &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove um item de tabela identificado por sua chave key . </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true - a chave foi encontrada </dd>
+<dd>
+false - a chave não foi encontrada </dd></dl>
+
+</div>
+</div>
+<a id="a0ad748587e73645e2e1ce21e6d41b845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ad748587e73645e2e1ce21e6d41b845">&#9670;&nbsp;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype">const KeyType &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DataType &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Insere na tabela a informação contida em data e associada a uma chave key . Calcula o endereço end que a informação data deve ocupar na tabela e o armazena na lista de colisão correspondente, ou seja, em m_data_table[end] . </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+    <tr><td class="paramname">data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true - a inserção foi realizada com sucesso </dd>
+<dd>
+false - a chave já existe na tabela, sobrescreve os dados da tabela com os dados contidos em data, para diferençar de uma inserção realizada pela primeira vez. </dd></dl>
+
+</div>
+</div>
+<a id="ab0907d777c09da3d1071c30a96939c71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0907d777c09da3d1071c30a96939c71">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classac_1_1HashTbl.html">HashTbl</a>&amp; <a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classac_1_1HashTbl.html">HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><a class="el" href="classac_1_1HashTbl.html">HashTbl</a>&amp; </dd></dl>
+
+</div>
+</div>
+<a id="a13febc90fbc2417ec7eff89dd282cd48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13febc90fbc2417ec7eff89dd282cd48">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classac_1_1HashTbl.html">HashTbl</a>&amp; <a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classac_1_1HashEntry.html">Entry</a> &gt;&#160;</td>
+          <td class="paramname"><em>ilist</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ilist</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><a class="el" href="classac_1_1HashTbl.html">HashTbl</a>&amp; </dd></dl>
+
+</div>
+</div>
+<a id="afde79bb1becbca4bff976aad011fd9aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afde79bb1becbca4bff976aad011fd9aa">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataType&amp; <a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const KeyType &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna uma referência para o dado associado a chave key fornecida, se existir. Se a chave não estiver na tabela, o método realizar a inserção e retorna a referência para o dado recém inserido na tabela. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>DataType&amp; </dd></dl>
+
+</div>
+</div>
+<a id="a07d35ca3cdad06901dc453104076cf80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d35ca3cdad06901dc453104076cf80">&#9670;&nbsp;</a></span>retrieve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::retrieve </td>
+          <td>(</td>
+          <td class="paramtype">const KeyType &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataType &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Recupera em data a informação associada a chave key passada como argumento para o método. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td></td></tr>
+    <tr><td class="paramname">data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true - a chave foi encontrada </dd>
+<dd>
+false - a chave não foi encontrada </dd></dl>
+
+</div>
+</div>
+<a id="a7498ffacffaa98fd34382f2585685d5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7498ffacffaa98fd34382f2585685d5a">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_type <a class="el" href="classac_1_1HashTbl.html">ac::HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt;::size </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>: Retorna a quantidade de elementos atualmente armazenados na tabela. </p>
+<dl class="section return"><dt>Retorna</dt><dd>size_type </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das classes amigas e funções relacionadas</h2>
+<a id="a4c43d1892457e01eb664da62966b7d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c43d1892457e01eb664da62966b7d60">&#9670;&nbsp;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class KeyType , class DataType , typename KeyHash  = std::hash &lt; KeyType&gt;, typename KeyEqual  = std::equal_to &lt; KeyType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classac_1_1HashTbl.html">HashTbl</a>&lt; KeyType, DataType, <a class="el" href="structKeyHash.html">KeyHash</a>, <a class="el" href="structKeyEqual.html">KeyEqual</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>hash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>: E um método de depuração usado para gerar uma representação textual da tabela e seus elementos. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td></td></tr>
+    <tr><td class="paramname">hash</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>std::ostream&amp; </dd></dl>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>include/<a class="el" href="hashtbl_8h_source.html">hashtbl.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

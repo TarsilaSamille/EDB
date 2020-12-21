@@ -1,0 +1,17 @@
+\hypertarget{account_8cpp}{}\doxysection{Referência ao ficheiro src/account.cpp}
+\label{account_8cpp}\index{src/account.cpp@{src/account.cpp}}
+{\ttfamily \#include \char`\"{}../include/account.\+h\char`\"{}}\newline
+Diagrama de dependências de inclusão para account.\+cpp\+:
+% FIG 0
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{account_8cpp_aa95621f8b6ba902e72efeae2a41191c8}\label{account_8cpp_aa95621f8b6ba902e72efeae2a41191c8}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os\+\_\+, const Account\+::\+Acct\+Key \&ak\+\_\+)
+\item 
+\mbox{\Hypertarget{account_8cpp_a3134ca4d37662f74568d25f22242f760}\label{account_8cpp_a3134ca4d37662f74568d25f22242f760}} 
+std\+::ostream \& \mbox{\hyperlink{account_8cpp_a3134ca4d37662f74568d25f22242f760}{operator$<$$<$}} (std\+::ostream \&os\+\_\+, const \mbox{\hyperlink{structAccount}{Account}} \&acct\+\_\+)
+\begin{DoxyCompactList}\small\item\em Stream extractor of the account information. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{account_8cpp_a7d9fee41f605b0a5958dccf7c2975885}\label{account_8cpp_a7d9fee41f605b0a5958dccf7c2975885}} 
+bool \mbox{\hyperlink{account_8cpp_a7d9fee41f605b0a5958dccf7c2975885}{operator==}} (const \mbox{\hyperlink{structAccount}{Account}} \&a, const \mbox{\hyperlink{structAccount}{Account}} \&b)
+\begin{DoxyCompactList}\small\item\em Compare two accounts. \end{DoxyCompactList}\end{DoxyCompactItemize}

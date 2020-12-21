@@ -1,0 +1,4 @@
+/home/tarsila/Área de Trabalho/EBD/vector/build/CMakeFiles/rebuild_cache.dir
+/home/tarsila/Área de Trabalho/EBD/vector/build/CMakeFiles/edit_cache.dir
+/home/tarsila/Área de Trabalho/EBD/vector/build/CMakeFiles/run_drive.dir
+/home/tarsila/Área de Trabalho/EBD/vector/build/CMakeFiles/run_tests.dir

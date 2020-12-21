@@ -1,0 +1,79 @@
+\hypertarget{classMyIterator}{}\doxysection{Referência à classe Template My\+Iterator$<$ T $>$}
+\label{classMyIterator}\index{MyIterator$<$ T $>$@{MyIterator$<$ T $>$}}
+\doxysubsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMyIterator_a3c52368e90470644f09b921bc7eff80e}\label{classMyIterator_a3c52368e90470644f09b921bc7eff80e}} 
+typedef std\+::ptrdiff\+\_\+t \mbox{\hyperlink{classMyIterator_a3c52368e90470644f09b921bc7eff80e}{difference\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Difference type used to calculated distance between iterators. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMyIterator_a55a3ee0991cd2814018861746fe00751}\label{classMyIterator_a55a3ee0991cd2814018861746fe00751}} 
+typedef T \mbox{\hyperlink{classMyIterator_a55a3ee0991cd2814018861746fe00751}{value\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Value type the iterator points to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMyIterator_aa420d145632ded2141b12eb622324965}\label{classMyIterator_aa420d145632ded2141b12eb622324965}} 
+typedef T $\ast$ \mbox{\hyperlink{classMyIterator_aa420d145632ded2141b12eb622324965}{pointer}}
+\begin{DoxyCompactList}\small\item\em Pointer to the value type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMyIterator_a047a6a83b21fe0f0ddf6f07b16cb0c5d}\label{classMyIterator_a047a6a83b21fe0f0ddf6f07b16cb0c5d}} 
+typedef T \& \mbox{\hyperlink{classMyIterator_a047a6a83b21fe0f0ddf6f07b16cb0c5d}{reference}}
+\begin{DoxyCompactList}\small\item\em Reference to the value type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMyIterator_a558388f8f3296da3ca2b251655200834}\label{classMyIterator_a558388f8f3296da3ca2b251655200834}} 
+typedef std\+::bidirectional\+\_\+iterator\+\_\+tag \mbox{\hyperlink{classMyIterator_a558388f8f3296da3ca2b251655200834}{iterator\+\_\+category}}
+\begin{DoxyCompactList}\small\item\em Iterator category. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMyIterator_aebc09d2fcf81fd549bebfd57f8647193}\label{classMyIterator_aebc09d2fcf81fd549bebfd57f8647193}} 
+\mbox{\hyperlink{classMyIterator}{My\+Iterator}} \& {\bfseries operator=} (const \mbox{\hyperlink{classMyIterator}{My\+Iterator}} \&other)
+\item 
+\mbox{\Hypertarget{classMyIterator_a4abeba7120a0e2e2b5ddae77e6a68d66}\label{classMyIterator_a4abeba7120a0e2e2b5ddae77e6a68d66}} 
+{\bfseries My\+Iterator} (\mbox{\hyperlink{classMyIterator_aa420d145632ded2141b12eb622324965}{pointer}} ref)
+\item 
+\mbox{\Hypertarget{classMyIterator_a50ad837615eeac3e362359d894a1636e}\label{classMyIterator_a50ad837615eeac3e362359d894a1636e}} 
+\mbox{\hyperlink{classMyIterator_a047a6a83b21fe0f0ddf6f07b16cb0c5d}{reference}} {\bfseries operator$\ast$} () const
+\item 
+\mbox{\Hypertarget{classMyIterator_a3b65302cd6ae2c54cb19a8bf2e32d770}\label{classMyIterator_a3b65302cd6ae2c54cb19a8bf2e32d770}} 
+\mbox{\hyperlink{classMyIterator_aa420d145632ded2141b12eb622324965}{pointer}} {\bfseries operator-\/$>$} (void) const
+\item 
+\mbox{\Hypertarget{classMyIterator_adce966b536c4529d5bfc377aa2f979ee}\label{classMyIterator_adce966b536c4529d5bfc377aa2f979ee}} 
+\mbox{\hyperlink{classMyIterator}{My\+Iterator}} \& {\bfseries operator++} ()
+\item 
+\mbox{\Hypertarget{classMyIterator_ac99d803cc9baab064137b4b4f7e862b7}\label{classMyIterator_ac99d803cc9baab064137b4b4f7e862b7}} 
+\mbox{\hyperlink{classMyIterator}{My\+Iterator}} {\bfseries operator++} (int n)
+\item 
+\mbox{\Hypertarget{classMyIterator_ab6c04c51ea359d7e5e2a038089ed7c27}\label{classMyIterator_ab6c04c51ea359d7e5e2a038089ed7c27}} 
+\mbox{\hyperlink{classMyIterator}{My\+Iterator}} \& {\bfseries operator-\/-\/} ()
+\item 
+\mbox{\Hypertarget{classMyIterator_a4e86d88babb6462c02efa1e8ead2ab9a}\label{classMyIterator_a4e86d88babb6462c02efa1e8ead2ab9a}} 
+\mbox{\hyperlink{classMyIterator}{My\+Iterator}} {\bfseries operator-\/-\/} (int n)
+\item 
+\mbox{\Hypertarget{classMyIterator_a506081af4e63d14b3d6cff1047b50849}\label{classMyIterator_a506081af4e63d14b3d6cff1047b50849}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classMyIterator}{My\+Iterator}} \&other) const
+\item 
+\mbox{\Hypertarget{classMyIterator_aaed7d5ecaec8a1e8a093c21c9e266285}\label{classMyIterator_aaed7d5ecaec8a1e8a093c21c9e266285}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classMyIterator}{My\+Iterator}} \&other) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMyIterator_a7bb710b3820578edc0cb2a676e1b0a8a}\label{classMyIterator_a7bb710b3820578edc0cb2a676e1b0a8a}} 
+\mbox{\hyperlink{classMyIterator}{My\+Iterator}} {\bfseries operator+} (\mbox{\hyperlink{classMyIterator_a3c52368e90470644f09b921bc7eff80e}{difference\+\_\+type}} n, \mbox{\hyperlink{classMyIterator}{My\+Iterator}} it)
+\item 
+\mbox{\Hypertarget{classMyIterator_a20fa52e659572248190a1600e46e465b}\label{classMyIterator_a20fa52e659572248190a1600e46e465b}} 
+\mbox{\hyperlink{classMyIterator}{My\+Iterator}} {\bfseries operator+} (\mbox{\hyperlink{classMyIterator}{My\+Iterator}} it, \mbox{\hyperlink{classMyIterator_a3c52368e90470644f09b921bc7eff80e}{difference\+\_\+type}} n)
+\item 
+\mbox{\Hypertarget{classMyIterator_adf95d2442a6fb72328180ef27bc0ed71}\label{classMyIterator_adf95d2442a6fb72328180ef27bc0ed71}} 
+\mbox{\hyperlink{classMyIterator_a3c52368e90470644f09b921bc7eff80e}{difference\+\_\+type}} {\bfseries operator+} (\mbox{\hyperlink{classMyIterator}{My\+Iterator}} it, \mbox{\hyperlink{classMyIterator}{My\+Iterator}} other)
+\item 
+\mbox{\Hypertarget{classMyIterator_a27b045fd3a4147b6391a2ab3f4d5dab7}\label{classMyIterator_a27b045fd3a4147b6391a2ab3f4d5dab7}} 
+\mbox{\hyperlink{classMyIterator}{My\+Iterator}} {\bfseries operator-\/} (\mbox{\hyperlink{classMyIterator_a3c52368e90470644f09b921bc7eff80e}{difference\+\_\+type}} n, \mbox{\hyperlink{classMyIterator}{My\+Iterator}} it)
+\item 
+\mbox{\Hypertarget{classMyIterator_ab5c2a7c68f1e4d3aedd904d5513c9205}\label{classMyIterator_ab5c2a7c68f1e4d3aedd904d5513c9205}} 
+\mbox{\hyperlink{classMyIterator}{My\+Iterator}} {\bfseries operator-\/} (\mbox{\hyperlink{classMyIterator}{My\+Iterator}} it, \mbox{\hyperlink{classMyIterator_a3c52368e90470644f09b921bc7eff80e}{difference\+\_\+type}} n)
+\item 
+\mbox{\Hypertarget{classMyIterator_ab59b6a78dea2b51385d51e21f7790cf8}\label{classMyIterator_ab59b6a78dea2b51385d51e21f7790cf8}} 
+\mbox{\hyperlink{classMyIterator_a3c52368e90470644f09b921bc7eff80e}{difference\+\_\+type}} {\bfseries operator-\/} (\mbox{\hyperlink{classMyIterator}{My\+Iterator}} it, \mbox{\hyperlink{classMyIterator}{My\+Iterator}} other)
+\end{DoxyCompactItemize}
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+source/include/\mbox{\hyperlink{MyIterator_8h}{My\+Iterator.\+h}}\end{DoxyCompactItemize}

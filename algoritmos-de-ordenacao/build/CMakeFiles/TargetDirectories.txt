@@ -1,0 +1,4 @@
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/build/CMakeFiles/rebuild_cache.dir
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/build/CMakeFiles/edit_cache.dir
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/build/CMakeFiles/timing_ordenation.dir
+/home/tarsila/Área de Trabalho/EBD/algoritmos-de-ordenacao/build/CMakeFiles/driver_ordenation.dir

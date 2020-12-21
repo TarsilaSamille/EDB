@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall   CMakeFiles/lista1.dir/src/main.cpp.o CMakeFiles/lista1.dir/src/algoritimos.cpp.o  -o lista1 

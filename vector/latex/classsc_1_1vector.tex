@@ -1,0 +1,182 @@
+\hypertarget{classsc_1_1vector}{}\doxysection{Referência à classe Template sc\+::vector$<$ T $>$}
+\label{classsc_1_1vector}\index{sc::vector$<$ T $>$@{sc::vector$<$ T $>$}}
+\doxysubsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a48bf37ba1a6d0c13504414d86e27c399}\label{classsc_1_1vector_a48bf37ba1a6d0c13504414d86e27c399}} 
+using \mbox{\hyperlink{classsc_1_1vector_a48bf37ba1a6d0c13504414d86e27c399}{size\+\_\+type}} = unsigned long
+\begin{DoxyCompactList}\small\item\em The size type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsc_1_1vector_ad37f5bfa688e43c420ed565e4bff6fac}\label{classsc_1_1vector_ad37f5bfa688e43c420ed565e4bff6fac}} 
+using \mbox{\hyperlink{classsc_1_1vector_ad37f5bfa688e43c420ed565e4bff6fac}{value\+\_\+type}} = T
+\begin{DoxyCompactList}\small\item\em The value type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsc_1_1vector_a0348a6e1e249e051964a2bc94b05527a}\label{classsc_1_1vector_a0348a6e1e249e051964a2bc94b05527a}} 
+using \mbox{\hyperlink{classsc_1_1vector_a0348a6e1e249e051964a2bc94b05527a}{pointer}} = \mbox{\hyperlink{classsc_1_1vector_ad37f5bfa688e43c420ed565e4bff6fac}{value\+\_\+type}} $\ast$
+\begin{DoxyCompactList}\small\item\em Pointer to a value stored in the container. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsc_1_1vector_a37394c8a6b82c4a0709737d7982e32b2}\label{classsc_1_1vector_a37394c8a6b82c4a0709737d7982e32b2}} 
+using \mbox{\hyperlink{classsc_1_1vector_a37394c8a6b82c4a0709737d7982e32b2}{reference}} = \mbox{\hyperlink{classsc_1_1vector_ad37f5bfa688e43c420ed565e4bff6fac}{value\+\_\+type}} \&
+\begin{DoxyCompactList}\small\item\em Reference to a value stored in the container. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsc_1_1vector_a8da2b1a11b069241100f9b2e14f481a0}\label{classsc_1_1vector_a8da2b1a11b069241100f9b2e14f481a0}} 
+using \mbox{\hyperlink{classsc_1_1vector_a8da2b1a11b069241100f9b2e14f481a0}{const\+\_\+reference}} = const \mbox{\hyperlink{classsc_1_1vector_ad37f5bfa688e43c420ed565e4bff6fac}{value\+\_\+type}} \&
+\begin{DoxyCompactList}\small\item\em Const reference to a value stored in the container. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}\label{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}} 
+using \mbox{\hyperlink{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}{iterator}} = \mbox{\hyperlink{classMyIterator}{My\+Iterator}}$<$ T $>$
+\begin{DoxyCompactList}\small\item\em Iterator that points to a specific element of type T. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsc_1_1vector_a18be0bb2c226ab436873ebd5e58eedcb}\label{classsc_1_1vector_a18be0bb2c226ab436873ebd5e58eedcb}} 
+using \mbox{\hyperlink{classsc_1_1vector_a18be0bb2c226ab436873ebd5e58eedcb}{const\+\_\+iterator}} = \mbox{\hyperlink{classMyIterator}{My\+Iterator}}$<$ const T $>$
+\begin{DoxyCompactList}\small\item\em Const iterator that points to a specific element of type T. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros públicos}
+\begin{Indent}\textbf{ \mbox{[}I\mbox{]} Special members}\par
+{\em i. Regular constructor; ii. Destructor; iii. Copy constructor; iv. Constructor from range; v. Constructor from initialize list; vi. Assignment operator; }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a8ceb2f122374a0fe1c645ebe5e759279}\label{classsc_1_1vector_a8ceb2f122374a0fe1c645ebe5e759279}} 
+{\bfseries vector} ()
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a024d736c8ec23f0bc187a4a0e59b2da5}\label{classsc_1_1vector_a024d736c8ec23f0bc187a4a0e59b2da5}} 
+{\bfseries $\sim$vector} ()
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a641fcc38459aee8e3bdf86abb5f9d193}\label{classsc_1_1vector_a641fcc38459aee8e3bdf86abb5f9d193}} 
+{\bfseries vector} (\mbox{\hyperlink{classsc_1_1vector_a48bf37ba1a6d0c13504414d86e27c399}{size\+\_\+type}} count)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_aed6fb1e650e0256b483ce754a473c4c2}\label{classsc_1_1vector_aed6fb1e650e0256b483ce754a473c4c2}} 
+{\bfseries vector} (const \mbox{\hyperlink{classsc_1_1vector}{vector}} \&other)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a431bb1411ec9a488b68b0eed9d8b5727}\label{classsc_1_1vector_a431bb1411ec9a488b68b0eed9d8b5727}} 
+{\bfseries vector} (std\+::initializer\+\_\+list$<$ T $>$ ilist)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a63b79871c10221cdc73c82564d1ea93d}\label{classsc_1_1vector_a63b79871c10221cdc73c82564d1ea93d}} 
+{\bfseries vector} (\mbox{\hyperlink{classsc_1_1vector}{vector}} \&\&other)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_ab58c55200c6a120b9d24793a271512fb}\label{classsc_1_1vector_ab58c55200c6a120b9d24793a271512fb}} 
+{\footnotesize template$<$typename Input\+It $>$ }\\{\bfseries vector} (Input\+It first, Input\+It last)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_ac645bc2fa1244d211c9ceecb68d4d539}\label{classsc_1_1vector_ac645bc2fa1244d211c9ceecb68d4d539}} 
+\mbox{\hyperlink{classsc_1_1vector}{vector}} \& {\bfseries operator=} (const \mbox{\hyperlink{classsc_1_1vector}{vector}} \&other)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_ac470900136d768ddb8d0ce21d05754a2}\label{classsc_1_1vector_ac470900136d768ddb8d0ce21d05754a2}} 
+\mbox{\hyperlink{classsc_1_1vector}{vector}} \& {\bfseries operator=} (\mbox{\hyperlink{classsc_1_1vector}{vector}} \&\&other)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a757984cf36675541db735350d227d609}\label{classsc_1_1vector_a757984cf36675541db735350d227d609}} 
+\mbox{\hyperlink{classsc_1_1vector}{vector}} \& {\bfseries operator=} (std\+::initializer\+\_\+list$<$ T $>$ ilist)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ \mbox{[}II\mbox{]} Iterator methods}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_aefba74791ea0f1ab9b9ad95d35bf9497}\label{classsc_1_1vector_aefba74791ea0f1ab9b9ad95d35bf9497}} 
+\mbox{\hyperlink{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}{iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a92378196850ffdcc094f266d40cc2cc5}\label{classsc_1_1vector_a92378196850ffdcc094f266d40cc2cc5}} 
+\mbox{\hyperlink{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}{iterator}} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a1741e91272d8fceb1aa321cfd5eced35}\label{classsc_1_1vector_a1741e91272d8fceb1aa321cfd5eced35}} 
+\mbox{\hyperlink{classsc_1_1vector_a18be0bb2c226ab436873ebd5e58eedcb}{const\+\_\+iterator}} {\bfseries cbegin} () const
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a14e26de3e05684b79f49ae355b6a3258}\label{classsc_1_1vector_a14e26de3e05684b79f49ae355b6a3258}} 
+\mbox{\hyperlink{classsc_1_1vector_a18be0bb2c226ab436873ebd5e58eedcb}{const\+\_\+iterator}} {\bfseries cend} (void) const
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ \mbox{[}I\+II\mbox{]} Capacity}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a1a2113e8d3d4c1494a929d55237d6dde}\label{classsc_1_1vector_a1a2113e8d3d4c1494a929d55237d6dde}} 
+\mbox{\hyperlink{classsc_1_1vector_a48bf37ba1a6d0c13504414d86e27c399}{size\+\_\+type}} {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a318c4ab34bd9605214e99db94c4258a9}\label{classsc_1_1vector_a318c4ab34bd9605214e99db94c4258a9}} 
+\mbox{\hyperlink{classsc_1_1vector_a48bf37ba1a6d0c13504414d86e27c399}{size\+\_\+type}} {\bfseries capacity} () const
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a74d59d93240b308c7b4409af489bc3c5}\label{classsc_1_1vector_a74d59d93240b308c7b4409af489bc3c5}} 
+bool {\bfseries empty} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ \mbox{[}IV\mbox{]} Modifiers}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a17c6d622cf64278d03feac9c38fa3684}\label{classsc_1_1vector_a17c6d622cf64278d03feac9c38fa3684}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_af31a66272a0e438eb064fd59831ae3c5}\label{classsc_1_1vector_af31a66272a0e438eb064fd59831ae3c5}} 
+void {\bfseries push\+\_\+front} (\mbox{\hyperlink{classsc_1_1vector_a8da2b1a11b069241100f9b2e14f481a0}{const\+\_\+reference}} value)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_aec7f41ad98a72a10376645a8b99fac07}\label{classsc_1_1vector_aec7f41ad98a72a10376645a8b99fac07}} 
+void {\bfseries push\+\_\+back} (\mbox{\hyperlink{classsc_1_1vector_a8da2b1a11b069241100f9b2e14f481a0}{const\+\_\+reference}} value)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a3dbc8155ac3737f9a9ffe7f454a8f321}\label{classsc_1_1vector_a3dbc8155ac3737f9a9ffe7f454a8f321}} 
+void {\bfseries pop\+\_\+back} ()
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_aad4717b5827454557f7c9e5c3edd5a7e}\label{classsc_1_1vector_aad4717b5827454557f7c9e5c3edd5a7e}} 
+void {\bfseries pop\+\_\+front} ()
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a66b05bd6b4ab92198d0c3cef74b3f6c3}\label{classsc_1_1vector_a66b05bd6b4ab92198d0c3cef74b3f6c3}} 
+\mbox{\hyperlink{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}{iterator}} {\bfseries insert} (\mbox{\hyperlink{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}{iterator}} pos, \mbox{\hyperlink{classsc_1_1vector_a8da2b1a11b069241100f9b2e14f481a0}{const\+\_\+reference}} value)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a31b954d40f19dcaabb818c3bfff492ac}\label{classsc_1_1vector_a31b954d40f19dcaabb818c3bfff492ac}} 
+{\footnotesize template$<$typename Input\+Itr $>$ }\\\mbox{\hyperlink{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}{iterator}} {\bfseries insert} (\mbox{\hyperlink{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}{iterator}} pos, Input\+Itr first, Input\+Itr last)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a3716362b7b3feacd7432e5c5b6907dbd}\label{classsc_1_1vector_a3716362b7b3feacd7432e5c5b6907dbd}} 
+\mbox{\hyperlink{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}{iterator}} {\bfseries insert} (\mbox{\hyperlink{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}{iterator}} pos, const std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{classsc_1_1vector_ad37f5bfa688e43c420ed565e4bff6fac}{value\+\_\+type}} $>$ \&ilist)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_adf9b78a735c50b4c4447ab8df5cab49e}\label{classsc_1_1vector_adf9b78a735c50b4c4447ab8df5cab49e}} 
+void {\bfseries reserve} (\mbox{\hyperlink{classsc_1_1vector_a48bf37ba1a6d0c13504414d86e27c399}{size\+\_\+type}} new\+\_\+cap)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_aaeb01dacb26f39fb08cffc6f274284fd}\label{classsc_1_1vector_aaeb01dacb26f39fb08cffc6f274284fd}} 
+void {\bfseries shrink\+\_\+to\+\_\+fit} ()
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a9b99b5175a61f8b75f60aca0923b4f26}\label{classsc_1_1vector_a9b99b5175a61f8b75f60aca0923b4f26}} 
+void {\bfseries assign} (\mbox{\hyperlink{classsc_1_1vector_a48bf37ba1a6d0c13504414d86e27c399}{size\+\_\+type}} count, \mbox{\hyperlink{classsc_1_1vector_a8da2b1a11b069241100f9b2e14f481a0}{const\+\_\+reference}} value)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a23b90b0b4616187079a933bd746fc5cc}\label{classsc_1_1vector_a23b90b0b4616187079a933bd746fc5cc}} 
+void {\bfseries assign} (const std\+::initializer\+\_\+list$<$ T $>$ \&ilist)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_acc669b2dc15d89b220612fad5f119aef}\label{classsc_1_1vector_acc669b2dc15d89b220612fad5f119aef}} 
+{\footnotesize template$<$typename Input\+Itr $>$ }\\void {\bfseries assign} (Input\+Itr first, Input\+Itr last)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_ad6a6907a57004d43d2c37767ce9da5e5}\label{classsc_1_1vector_ad6a6907a57004d43d2c37767ce9da5e5}} 
+\mbox{\hyperlink{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}{iterator}} {\bfseries erase} (\mbox{\hyperlink{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}{iterator}} first, \mbox{\hyperlink{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}{iterator}} last)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a9dcc8ea80726caae68ac935ca677abfe}\label{classsc_1_1vector_a9dcc8ea80726caae68ac935ca677abfe}} 
+\mbox{\hyperlink{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}{iterator}} {\bfseries erase} (\mbox{\hyperlink{classsc_1_1vector_a3775e890c43b03e29eb01fc0967acd0a}{iterator}} pos)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ \mbox{[}V\mbox{]} Element access}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a78f15f56c6897d08021e63931c0fb5ed}\label{classsc_1_1vector_a78f15f56c6897d08021e63931c0fb5ed}} 
+\mbox{\hyperlink{classsc_1_1vector_a8da2b1a11b069241100f9b2e14f481a0}{const\+\_\+reference}} {\bfseries front} () const
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a2ad68f9ebeea1f35adf3917078f28123}\label{classsc_1_1vector_a2ad68f9ebeea1f35adf3917078f28123}} 
+\mbox{\hyperlink{classsc_1_1vector_a37394c8a6b82c4a0709737d7982e32b2}{reference}} {\bfseries front} ()
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a7d53825a0a7a28ff28d853db37dcb32e}\label{classsc_1_1vector_a7d53825a0a7a28ff28d853db37dcb32e}} 
+\mbox{\hyperlink{classsc_1_1vector_a8da2b1a11b069241100f9b2e14f481a0}{const\+\_\+reference}} {\bfseries back} () const
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a5490d507eca8adecb3369c1787b4d11f}\label{classsc_1_1vector_a5490d507eca8adecb3369c1787b4d11f}} 
+\mbox{\hyperlink{classsc_1_1vector_a37394c8a6b82c4a0709737d7982e32b2}{reference}} {\bfseries back} ()
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a7857cccab8dc3c5dd1089faf2e3d1369}\label{classsc_1_1vector_a7857cccab8dc3c5dd1089faf2e3d1369}} 
+\mbox{\hyperlink{classsc_1_1vector_a37394c8a6b82c4a0709737d7982e32b2}{reference}} {\bfseries operator\mbox{[}$\,$\mbox{]}} (\mbox{\hyperlink{classsc_1_1vector_a48bf37ba1a6d0c13504414d86e27c399}{size\+\_\+type}} pos)
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a10494f541b47229169b958bd2e08e86d}\label{classsc_1_1vector_a10494f541b47229169b958bd2e08e86d}} 
+\mbox{\hyperlink{classsc_1_1vector_a8da2b1a11b069241100f9b2e14f481a0}{const\+\_\+reference}} {\bfseries operator\mbox{[}$\,$\mbox{]}} (\mbox{\hyperlink{classsc_1_1vector_a48bf37ba1a6d0c13504414d86e27c399}{size\+\_\+type}} pos) const
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_aa31610eb9fe435b48ee57b68a9848c5b}\label{classsc_1_1vector_aa31610eb9fe435b48ee57b68a9848c5b}} 
+\mbox{\hyperlink{classsc_1_1vector_a8da2b1a11b069241100f9b2e14f481a0}{const\+\_\+reference}} {\bfseries at} (\mbox{\hyperlink{classsc_1_1vector_a48bf37ba1a6d0c13504414d86e27c399}{size\+\_\+type}} pos) const
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a16fbb62d3fc5cc20851085496935b685}\label{classsc_1_1vector_a16fbb62d3fc5cc20851085496935b685}} 
+\mbox{\hyperlink{classsc_1_1vector_a37394c8a6b82c4a0709737d7982e32b2}{reference}} {\bfseries at} (\mbox{\hyperlink{classsc_1_1vector_a48bf37ba1a6d0c13504414d86e27c399}{size\+\_\+type}} pos)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ \mbox{[}VI\mbox{]} Operators}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a03b0622d08b41642a43dfbac21db19dc}\label{classsc_1_1vector_a03b0622d08b41642a43dfbac21db19dc}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classsc_1_1vector}{vector}} \&other) const
+\item 
+\mbox{\Hypertarget{classsc_1_1vector_a8b47d19ca633ef79cf737f5a6ecab12b}\label{classsc_1_1vector_a8b47d19ca633ef79cf737f5a6ecab12b}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classsc_1_1vector}{vector}} \&other) const
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+source/include/\mbox{\hyperlink{vector_8h}{vector.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Implementação de Vetor: Referência à classe Template MyIterator&lt; T &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Implementação de Vetor
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Tipos Públicos</a> &#124;
+<a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#friends">Amigos</a> &#124;
+<a href="classMyIterator-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe Template MyIterator&lt; T &gt;</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Tipos Públicos</h2></td></tr>
+<tr class="memitem:a3c52368e90470644f09b921bc7eff80e"><td class="memItemLeft" align="right" valign="top"><a id="a3c52368e90470644f09b921bc7eff80e"></a>
+typedef std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyIterator.html#a3c52368e90470644f09b921bc7eff80e">difference_type</a></td></tr>
+<tr class="memdesc:a3c52368e90470644f09b921bc7eff80e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Difference type used to calculated distance between iterators. <br /></td></tr>
+<tr class="separator:a3c52368e90470644f09b921bc7eff80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a3ee0991cd2814018861746fe00751"><td class="memItemLeft" align="right" valign="top"><a id="a55a3ee0991cd2814018861746fe00751"></a>
+typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyIterator.html#a55a3ee0991cd2814018861746fe00751">value_type</a></td></tr>
+<tr class="memdesc:a55a3ee0991cd2814018861746fe00751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value type the iterator points to. <br /></td></tr>
+<tr class="separator:a55a3ee0991cd2814018861746fe00751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa420d145632ded2141b12eb622324965"><td class="memItemLeft" align="right" valign="top"><a id="aa420d145632ded2141b12eb622324965"></a>
+typedef T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyIterator.html#aa420d145632ded2141b12eb622324965">pointer</a></td></tr>
+<tr class="memdesc:aa420d145632ded2141b12eb622324965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the value type. <br /></td></tr>
+<tr class="separator:aa420d145632ded2141b12eb622324965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047a6a83b21fe0f0ddf6f07b16cb0c5d"><td class="memItemLeft" align="right" valign="top"><a id="a047a6a83b21fe0f0ddf6f07b16cb0c5d"></a>
+typedef T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyIterator.html#a047a6a83b21fe0f0ddf6f07b16cb0c5d">reference</a></td></tr>
+<tr class="memdesc:a047a6a83b21fe0f0ddf6f07b16cb0c5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the value type. <br /></td></tr>
+<tr class="separator:a047a6a83b21fe0f0ddf6f07b16cb0c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a558388f8f3296da3ca2b251655200834"><td class="memItemLeft" align="right" valign="top"><a id="a558388f8f3296da3ca2b251655200834"></a>
+typedef std::bidirectional_iterator_tag&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyIterator.html#a558388f8f3296da3ca2b251655200834">iterator_category</a></td></tr>
+<tr class="memdesc:a558388f8f3296da3ca2b251655200834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator category. <br /></td></tr>
+<tr class="separator:a558388f8f3296da3ca2b251655200834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:aebc09d2fcf81fd549bebfd57f8647193"><td class="memItemLeft" align="right" valign="top"><a id="aebc09d2fcf81fd549bebfd57f8647193"></a>
+<a class="el" href="classMyIterator.html">MyIterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classMyIterator.html">MyIterator</a> &amp;other)</td></tr>
+<tr class="separator:aebc09d2fcf81fd549bebfd57f8647193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4abeba7120a0e2e2b5ddae77e6a68d66"><td class="memItemLeft" align="right" valign="top"><a id="a4abeba7120a0e2e2b5ddae77e6a68d66"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MyIterator</b> (<a class="el" href="classMyIterator.html#aa420d145632ded2141b12eb622324965">pointer</a> ref)</td></tr>
+<tr class="separator:a4abeba7120a0e2e2b5ddae77e6a68d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ad837615eeac3e362359d894a1636e"><td class="memItemLeft" align="right" valign="top"><a id="a50ad837615eeac3e362359d894a1636e"></a>
+<a class="el" href="classMyIterator.html#a047a6a83b21fe0f0ddf6f07b16cb0c5d">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () const</td></tr>
+<tr class="separator:a50ad837615eeac3e362359d894a1636e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b65302cd6ae2c54cb19a8bf2e32d770"><td class="memItemLeft" align="right" valign="top"><a id="a3b65302cd6ae2c54cb19a8bf2e32d770"></a>
+<a class="el" href="classMyIterator.html#aa420d145632ded2141b12eb622324965">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> (void) const</td></tr>
+<tr class="separator:a3b65302cd6ae2c54cb19a8bf2e32d770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce966b536c4529d5bfc377aa2f979ee"><td class="memItemLeft" align="right" valign="top"><a id="adce966b536c4529d5bfc377aa2f979ee"></a>
+<a class="el" href="classMyIterator.html">MyIterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> ()</td></tr>
+<tr class="separator:adce966b536c4529d5bfc377aa2f979ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99d803cc9baab064137b4b4f7e862b7"><td class="memItemLeft" align="right" valign="top"><a id="ac99d803cc9baab064137b4b4f7e862b7"></a>
+<a class="el" href="classMyIterator.html">MyIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> (int n)</td></tr>
+<tr class="separator:ac99d803cc9baab064137b4b4f7e862b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c04c51ea359d7e5e2a038089ed7c27"><td class="memItemLeft" align="right" valign="top"><a id="ab6c04c51ea359d7e5e2a038089ed7c27"></a>
+<a class="el" href="classMyIterator.html">MyIterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> ()</td></tr>
+<tr class="separator:ab6c04c51ea359d7e5e2a038089ed7c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e86d88babb6462c02efa1e8ead2ab9a"><td class="memItemLeft" align="right" valign="top"><a id="a4e86d88babb6462c02efa1e8ead2ab9a"></a>
+<a class="el" href="classMyIterator.html">MyIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> (int n)</td></tr>
+<tr class="separator:a4e86d88babb6462c02efa1e8ead2ab9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506081af4e63d14b3d6cff1047b50849"><td class="memItemLeft" align="right" valign="top"><a id="a506081af4e63d14b3d6cff1047b50849"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classMyIterator.html">MyIterator</a> &amp;other) const</td></tr>
+<tr class="separator:a506081af4e63d14b3d6cff1047b50849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed7d5ecaec8a1e8a093c21c9e266285"><td class="memItemLeft" align="right" valign="top"><a id="aaed7d5ecaec8a1e8a093c21c9e266285"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classMyIterator.html">MyIterator</a> &amp;other) const</td></tr>
+<tr class="separator:aaed7d5ecaec8a1e8a093c21c9e266285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Amigos</h2></td></tr>
+<tr class="memitem:a7bb710b3820578edc0cb2a676e1b0a8a"><td class="memItemLeft" align="right" valign="top"><a id="a7bb710b3820578edc0cb2a676e1b0a8a"></a>
+<a class="el" href="classMyIterator.html">MyIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (<a class="el" href="classMyIterator.html#a3c52368e90470644f09b921bc7eff80e">difference_type</a> n, <a class="el" href="classMyIterator.html">MyIterator</a> it)</td></tr>
+<tr class="separator:a7bb710b3820578edc0cb2a676e1b0a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20fa52e659572248190a1600e46e465b"><td class="memItemLeft" align="right" valign="top"><a id="a20fa52e659572248190a1600e46e465b"></a>
+<a class="el" href="classMyIterator.html">MyIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (<a class="el" href="classMyIterator.html">MyIterator</a> it, <a class="el" href="classMyIterator.html#a3c52368e90470644f09b921bc7eff80e">difference_type</a> n)</td></tr>
+<tr class="separator:a20fa52e659572248190a1600e46e465b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf95d2442a6fb72328180ef27bc0ed71"><td class="memItemLeft" align="right" valign="top"><a id="adf95d2442a6fb72328180ef27bc0ed71"></a>
+<a class="el" href="classMyIterator.html#a3c52368e90470644f09b921bc7eff80e">difference_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (<a class="el" href="classMyIterator.html">MyIterator</a> it, <a class="el" href="classMyIterator.html">MyIterator</a> other)</td></tr>
+<tr class="separator:adf95d2442a6fb72328180ef27bc0ed71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27b045fd3a4147b6391a2ab3f4d5dab7"><td class="memItemLeft" align="right" valign="top"><a id="a27b045fd3a4147b6391a2ab3f4d5dab7"></a>
+<a class="el" href="classMyIterator.html">MyIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (<a class="el" href="classMyIterator.html#a3c52368e90470644f09b921bc7eff80e">difference_type</a> n, <a class="el" href="classMyIterator.html">MyIterator</a> it)</td></tr>
+<tr class="separator:a27b045fd3a4147b6391a2ab3f4d5dab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5c2a7c68f1e4d3aedd904d5513c9205"><td class="memItemLeft" align="right" valign="top"><a id="ab5c2a7c68f1e4d3aedd904d5513c9205"></a>
+<a class="el" href="classMyIterator.html">MyIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (<a class="el" href="classMyIterator.html">MyIterator</a> it, <a class="el" href="classMyIterator.html#a3c52368e90470644f09b921bc7eff80e">difference_type</a> n)</td></tr>
+<tr class="separator:ab5c2a7c68f1e4d3aedd904d5513c9205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59b6a78dea2b51385d51e21f7790cf8"><td class="memItemLeft" align="right" valign="top"><a id="ab59b6a78dea2b51385d51e21f7790cf8"></a>
+<a class="el" href="classMyIterator.html#a3c52368e90470644f09b921bc7eff80e">difference_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (<a class="el" href="classMyIterator.html">MyIterator</a> it, <a class="el" href="classMyIterator.html">MyIterator</a> other)</td></tr>
+<tr class="separator:ab59b6a78dea2b51385d51e21f7790cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>source/include/<a class="el" href="MyIterator_8h_source.html">MyIterator.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
